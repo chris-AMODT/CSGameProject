@@ -16,15 +16,13 @@ void MainWindow::buildMenuScreen()
     layout->setAlignment(Qt::AlignCenter);
     layout->setSpacing(20);
 
-    // Title
-    m_titleLabel = new QLabel("⚔  BATTLE ARENA  ⚔", m_centralWidget);
+    m_titleLabel = new QLabel("  BATTLE ARENA  ", m_centralWidget);
     QFont titleFont = m_titleLabel->font();
     titleFont.setPointSize(28);
     titleFont.setBold(true);
     m_titleLabel->setFont(titleFont);
     m_titleLabel->setAlignment(Qt::AlignCenter);
 
-    // Buttons
     m_startBtn = new QPushButton("Start Game", m_centralWidget);
     m_startBtn->setFixedSize(200, 50);
 
@@ -44,8 +42,7 @@ void MainWindow::buildMenuScreen()
 
 void MainWindow::onStartGame()
 {
-    // TODO (commit 4): swap to battlefield widget
-    m_titleLabel->setText("Game starting... (not implemented yet)");
+    m_titleLabel->setText("Game starting... WIP :)");
 }
 
 void MainWindow::onExitGame()
