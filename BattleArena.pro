@@ -2,12 +2,14 @@ QT += core gui widgets
 
 CONFIG += c++17
 
-TEMPLATE = app
 TARGET = BattleArena
+TEMPLATE = app
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    character.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    character.h
