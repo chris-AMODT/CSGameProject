@@ -1,0 +1,5 @@
+# Build output
+build/
+
+# VSCode C++ config (machine-specific)
+.vscode/c_cpp_properties.json
